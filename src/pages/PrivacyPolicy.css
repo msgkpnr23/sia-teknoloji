@@ -1,0 +1,1192 @@
+/* =========================================
+   PRIVACY POLICY — BEETINQ
+   BLUE & WHITE PREMIUM THEME
+========================================= */
+
+.privacy-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(59, 130, 246, 0.14),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(37, 99, 235, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(96, 165, 250, 0.10),
+      transparent 30%
+    ),
+    #f5f9ff;
+
+  color: #0f172a;
+
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* =========================================
+   ARKA PLAN IŞIKLARI
+========================================= */
+
+.privacy-page::before,
+.privacy-page::after {
+  content: "";
+
+  position: fixed;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  animation: privacyFloat 9s ease-in-out infinite alternate;
+}
+
+.privacy-page::before {
+  background: rgba(37, 99, 235, 0.12);
+
+  top: 8%;
+  left: -180px;
+}
+
+.privacy-page::after {
+  background: rgba(59, 130, 246, 0.10);
+
+  right: -180px;
+  bottom: 8%;
+
+  animation-delay: 2s;
+}
+
+@keyframes privacyFloat {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(30px, -35px, 0) scale(1.12);
+  }
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.privacy-navbar {
+  position: sticky;
+  top: 0;
+
+  z-index: 50;
+
+  height: 82px;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(245, 249, 255, 0.78);
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+
+  animation: privacyNavIn 0.8s ease forwards;
+}
+
+@keyframes privacyNavIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* LOGO */
+
+.privacy-logo {
+  color: #0f172a;
+
+  text-decoration: none;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+
+  transition: transform 0.3s ease;
+}
+
+.privacy-logo span {
+  color: #2563eb;
+}
+
+.privacy-logo:hover {
+  transform: translateY(-2px);
+}
+
+
+/* GERİ BUTONU */
+
+.privacy-back {
+  color: #0f172a;
+
+  text-decoration: none;
+
+  padding: 11px 18px;
+
+  border: 1px solid rgba(15, 23, 42, 0.12);
+
+  border-radius: 100px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.privacy-back:hover {
+  transform: translateX(-4px);
+
+  background: #0b1f3a;
+
+  color: white;
+
+  border-color: #0b1f3a;
+
+  box-shadow:
+    0 10px 30px rgba(11, 31, 58, 0.14);
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.privacy-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1100px, 90%);
+
+  margin: 0 auto;
+
+  padding: 100px 0 130px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.privacy-header {
+  position: relative;
+
+  padding: 70px 65px;
+
+  margin-bottom: 55px;
+
+  border-radius: 34px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(238, 246, 255, 0.78)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 30px 80px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+
+  overflow: hidden;
+
+  animation:
+    privacyHeaderIn
+    1s
+    cubic-bezier(.22, 1, .36, 1)
+    forwards;
+}
+
+.privacy-header::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  top: -150px;
+  right: -80px;
+
+  border-radius: 50%;
+
+  background: rgba(59, 130, 246, 0.13);
+
+  filter: blur(20px);
+
+  animation:
+    headerOrb
+    7s
+    ease-in-out
+    infinite
+    alternate;
+}
+
+.privacy-header::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  left: -80px;
+  bottom: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(37, 99, 235, 0.09);
+
+  filter: blur(25px);
+
+  animation:
+    headerOrb
+    8s
+    ease-in-out
+    infinite
+    alternate-reverse;
+}
+
+@keyframes headerOrb {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(-25px, 25px) scale(1.2);
+  }
+}
+
+@keyframes privacyHeaderIn {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.privacy-label {
+  position: relative;
+
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 22px;
+
+  padding: 8px 14px;
+
+  border-radius: 100px;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  border: 1px solid rgba(37, 99, 235, 0.18);
+
+  color: #1d4ed8;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.privacy-label::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  box-shadow:
+    0 0 0 5px rgba(37, 99, 235, 0.10);
+
+  animation:
+    privacyPulse
+    2s
+    infinite;
+}
+
+@keyframes privacyPulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px rgba(37, 99, 235, 0.10);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 9px rgba(37, 99, 235, 0.02);
+  }
+}
+
+
+/* =========================================
+   ANA BAŞLIK
+========================================= */
+
+.privacy-header h1 {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0;
+
+  font-size: clamp(52px, 8vw, 105px);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.065em;
+
+  font-weight: 850;
+
+  background:
+    linear-gradient(
+      110deg,
+      #0f172a 0%,
+      #0f172a 45%,
+      #3b82f6 75%,
+      #1d4ed8 100%
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+.privacy-header h1 span {
+  color: #2563eb;
+}
+
+
+/* HEADER AÇIKLAMA */
+
+.privacy-header p {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 650px;
+
+  margin: 28px 0 0;
+
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  letter-spacing: -0.15px;
+}
+
+.privacy-header p::first-letter {
+  color: #2563eb;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.privacy-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.privacy-section {
+  position: relative;
+
+  padding: 38px 42px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.78);
+
+  border: 1px solid rgba(15, 23, 42, 0.07);
+
+  box-shadow:
+    0 15px 45px rgba(15, 23, 42, 0.045);
+
+  transition:
+    transform 0.4s cubic-bezier(.22, 1, .36, 1),
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+
+  animation:
+    privacySectionIn
+    0.8s
+    cubic-bezier(.22, 1, .36, 1)
+    both;
+
+  overflow: hidden;
+}
+
+.privacy-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.privacy-section:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.privacy-section:nth-child(3) {
+  animation-delay: 0.26s;
+}
+
+.privacy-section:nth-child(4) {
+  animation-delay: 0.34s;
+}
+
+.privacy-section:nth-child(5) {
+  animation-delay: 0.42s;
+}
+
+.privacy-section:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.privacy-section:nth-child(7) {
+  animation-delay: 0.58s;
+}
+
+@keyframes privacySectionIn {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* SECTION HOVER */
+
+.privacy-section:hover {
+  transform: translateY(-5px);
+
+  border-color:
+    rgba(37, 99, 235, 0.25);
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.08),
+    0 0 0 1px rgba(37, 99, 235, 0.04);
+}
+
+
+/* =========================================
+   SECTION BAŞLIKLARI
+========================================= */
+
+.privacy-section h2 {
+  position: relative;
+
+  display: inline-block;
+
+  padding-bottom: 10px;
+
+  margin: 0 0 18px;
+
+  font-size: 25px;
+
+  font-weight: 750;
+
+  letter-spacing: -0.8px;
+}
+
+.privacy-section h2::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #93c5fd
+    );
+
+  transition: width 0.35s ease;
+}
+
+.privacy-section:hover h2::after {
+  width: 75px;
+}
+
+
+/* =========================================
+   ALT BAŞLIKLAR
+========================================= */
+
+.privacy-section h3 {
+  position: relative;
+
+  margin: 32px 0 12px;
+
+  color: #1e293b;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+}
+
+.privacy-section h3::before {
+  content: "—";
+
+  margin-right: 8px;
+
+  color: #2563eb;
+
+  font-weight: 800;
+}
+
+
+/* =========================================
+   PARAGRAFLAR
+========================================= */
+
+.privacy-section p {
+  margin: 0 0 15px;
+
+  color: #64748b;
+
+  font-size: 15.5px;
+
+  line-height: 1.9;
+
+  letter-spacing: -0.1px;
+}
+
+.privacy-section p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-section p strong {
+  color: #0f172a;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   LISTELER
+========================================= */
+
+.privacy-section ul {
+  margin: 20px 0;
+
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.privacy-section li {
+  position: relative;
+
+  margin: 12px 0;
+
+  padding-left: 28px;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+.privacy-section li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 9px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  box-shadow:
+    0 0 0 5px rgba(37, 99, 235, 0.09);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.privacy-section li:hover::before {
+  transform: scale(1.35);
+
+  box-shadow:
+    0 0 0 7px rgba(37, 99, 235, 0.08);
+}
+
+.privacy-section li::marker {
+  display: none;
+}
+
+
+/* =========================================
+   LINKLER
+========================================= */
+
+.privacy-section a {
+  position: relative;
+
+  color: #1d4ed8;
+
+  font-weight: 650;
+
+  text-decoration: none;
+
+  border: none;
+}
+
+.privacy-section a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -3px;
+
+  width: 100%;
+  height: 1px;
+
+  background: #2563eb;
+
+  transform: scaleX(0);
+
+  transform-origin: right;
+
+  transition:
+    transform 0.35s ease;
+}
+
+.privacy-section a:hover {
+  color: #1e40af;
+}
+
+.privacy-section a:hover::after {
+  transform: scaleX(1);
+
+  transform-origin: left;
+}
+
+
+/* =========================================
+   ÖZEL VURGULAR
+========================================= */
+
+.privacy-section strong {
+  color: #0f172a;
+}
+
+.privacy-section em {
+  color: #1d4ed8;
+}
+
+
+/* =========================================
+   SECTION DEKORATİF EFEKT
+========================================= */
+
+.privacy-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 90px;
+  height: 90px;
+
+  border-radius: 0 25px 0 90px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.07),
+      transparent
+    );
+
+  pointer-events: none;
+
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
+}
+
+.privacy-section:hover::before {
+  width: 130px;
+  height: 130px;
+}
+
+
+/* =========================================
+   CONTACT CARD
+========================================= */
+
+.privacy-contact {
+  position: relative;
+
+  margin-top: 20px;
+
+  padding: 38px;
+
+  border-radius: 28px;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(59, 130, 246, 0.35),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #061426 0%,
+      #0b1f3a 55%,
+      #12345c 100%
+    );
+
+  color: white;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 70px rgba(6, 20, 38, 0.22);
+
+  animation:
+    privacySectionIn
+    0.9s
+    ease
+    both;
+}
+
+.privacy-contact::before {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  right: -90px;
+  top: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(59, 130, 246, 0.25);
+
+  filter: blur(15px);
+
+  animation:
+    contactFloat
+    6s
+    ease-in-out
+    infinite
+    alternate;
+}
+
+.privacy-contact::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  left: -70px;
+  bottom: -80px;
+
+  border-radius: 50%;
+
+  background: rgba(96, 165, 250, 0.10);
+
+  filter: blur(15px);
+}
+
+@keyframes contactFloat {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-35px, 30px);
+  }
+}
+
+.privacy-contact h2,
+.privacy-contact p,
+.privacy-contact a {
+  position: relative;
+
+  z-index: 2;
+}
+
+.privacy-contact h2 {
+  margin: 0 0 12px;
+
+  font-size: 30px;
+
+  font-weight: 800;
+
+  letter-spacing: -1.2px;
+}
+
+.privacy-contact p {
+  margin: 0 0 22px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+.privacy-contact a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  border: 1px solid rgba(96, 165, 250, 0.38);
+
+  border-radius: 100px;
+
+  background: rgba(59, 130, 246, 0.10);
+
+  color: #93c5fd;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  font-size: 16px;
+
+  transition:
+    color 0.25s ease,
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.privacy-contact a:hover {
+  transform: translateY(-3px);
+
+  background: rgba(59, 130, 246, 0.20);
+
+  border-color: rgba(96, 165, 250, 0.75);
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.privacy-footer {
+  margin-top: 80px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  letter-spacing: 0.2px;
+}
+
+.privacy-footer a {
+  position: relative;
+
+  color: #0f172a;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: color 0.25s ease;
+}
+
+.privacy-footer a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -4px;
+
+  width: 100%;
+  height: 1px;
+
+  background: #2563eb;
+
+  transform: scaleX(0);
+
+  transform-origin: right;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.privacy-footer a:hover {
+  color: #2563eb;
+}
+
+.privacy-footer a:hover::after {
+  transform: scaleX(1);
+
+  transform-origin: left;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .privacy-navbar {
+    height: 72px;
+
+    padding: 0 5%;
+  }
+
+  .privacy-container {
+    width: 92%;
+
+    padding: 70px 0 90px;
+  }
+
+  .privacy-header {
+    padding: 50px 35px;
+
+    border-radius: 25px;
+  }
+
+  .privacy-header h1 {
+    letter-spacing: -3px;
+  }
+
+  .privacy-section {
+    padding: 30px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 560px) {
+
+  .privacy-navbar {
+    padding: 0 20px;
+  }
+
+  .privacy-logo {
+    font-size: 22px;
+  }
+
+  .privacy-back {
+    padding: 9px 13px;
+
+    font-size: 11px;
+  }
+
+  .privacy-container {
+    width: calc(100% - 30px);
+
+    padding: 45px 0 70px;
+  }
+
+  .privacy-header {
+    padding: 38px 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 22px;
+  }
+
+  .privacy-header h1 {
+    font-size: 50px;
+
+    letter-spacing: -0.055em;
+  }
+
+  .privacy-header p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .privacy-label {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .privacy-section {
+    padding: 25px 22px;
+
+    border-radius: 20px;
+  }
+
+  .privacy-section h2 {
+    font-size: 21px;
+  }
+
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+  .privacy-section h3 {
+    font-size: 16px;
+  }
+
+  .privacy-contact {
+    padding: 28px 24px;
+
+    border-radius: 22px;
+  }
+
+  .privacy-contact h2 {
+    font-size: 24px;
+  }
+
+  .privacy-footer {
+    margin-top: 50px;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: center;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .privacy-page::before,
+  .privacy-page::after,
+  .privacy-header::before,
+  .privacy-header::after,
+  .privacy-contact::before,
+  .privacy-label::before {
+    animation: none;
+  }
+
+  .privacy-header,
+  .privacy-section,
+  .privacy-contact,
+  .privacy-navbar {
+    animation: none;
+  }
+
+  .privacy-section {
+    transition: none;
+  }
+}
