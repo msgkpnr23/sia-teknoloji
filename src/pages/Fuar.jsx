@@ -27,6 +27,7 @@ import "./Fuar.css";
 const DEMO_URL = "https://demo.beetinq.com/demo";
 
 const TRANSLATIONS = {
+    "← Ana Sayfa": "← Home",
     "Fuar, İş Etkinliği ve B2B Yönetim Platformu": "Fair, Business Event and B2B Management Platform",
     "Planlamadan B2B görüşmelere, fuarın tüm süreçleri tek platformda.": "From planning to B2B meetings, manage every stage of your fair on one platform.",
     "B2B görüşme": "B2B meetings",
@@ -487,8 +488,17 @@ export default function Fuar() {
 
     return (
         <Translate lang={lang}>
+
             <div className="fr-page">
                 <section className="fr-cover">
+                    <div className="ak-topbar">
+                        <Link to="/" className="ak-home-button">
+                            <FaArrowRight
+                                style={{ transform: "rotate(180deg)" }}
+                            />
+                            Ana Sayfa
+                        </Link>
+                    </div>
                     <div className="fr-cover-top">
                         <div
                             style={{

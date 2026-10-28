@@ -1820,3 +1820,74 @@
   background: #0057ff;
   color: #ffffff;
 }
+
+.ak-topbar {
+    width: 100%;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f5f9ff;
+    box-sizing: border-box;
+}
+
+.ak-home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #0b1f3a;
+    border: 1px solid #dbe7f5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.ak-home-button:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.ak-topbar {
+    position: static;
+    width: 100%;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f5f9ff;
+    box-sizing: border-box;
+}
+
+.ak-home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #0b1f3a;
+    border: 1px solid #dbe7f5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.ak-home-button:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+/* Üstteki açık gri bant: kaldır */
+.ak-topbar {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
