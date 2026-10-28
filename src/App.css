@@ -310,7 +310,7 @@ img {
   gap: 12px;
 }
 
-.sia-col + .sia-col {
+.sia-col+.sia-col {
   border-left: 1px solid var(--line);
 }
 
@@ -621,7 +621,7 @@ img {
   color: var(--white);
 }
 
-.sia-security > * {
+.sia-security>* {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
@@ -759,7 +759,7 @@ img {
   border: 1px solid var(--line);
 }
 
-.sx-chart > strong {
+.sx-chart>strong {
   font-size: 16px;
 }
 
@@ -849,7 +849,7 @@ img {
   margin-bottom: 28px;
 }
 
-.sx-hub > div {
+.sx-hub>div {
   padding: 16px;
   border-radius: 14px;
   background: var(--blue-50);
@@ -1057,6 +1057,7 @@ img {
    ========================================================= */
 
 @media (max-width: 1000px) {
+
   .sia-window-body,
   .sia-compare,
   .sia-outputs,
@@ -1086,13 +1087,14 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .sia-col + .sia-col {
+  .sia-col+.sia-col {
     border-left: none;
     border-top: 1px solid var(--line);
   }
 }
 
 @media (max-width: 900px) {
+
   .nav-links,
   .nav-button {
     display: none;
@@ -1162,6 +1164,7 @@ img {
     animation-duration: 0.01ms !important;
   }
 }
+
 /* =========================================================
    YASAL SAYFALAR (terms-*)
    ========================================================= */
@@ -1349,14 +1352,14 @@ img {
   border-top: 1px solid var(--line);
 }
 
-.terms-footer > div:first-child strong {
+.terms-footer>div:first-child strong {
   display: block;
   margin-bottom: 6px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
 }
 
-.terms-footer > div:first-child span {
+.terms-footer>div:first-child span {
   color: var(--muted);
   font-size: 14px;
 }
@@ -1392,6 +1395,7 @@ img {
     display: none;
   }
 }
+
 .sia-pills span {
   display: inline-flex;
   align-items: center;
@@ -1409,6 +1413,7 @@ img {
   font-style: normal;
   font-size: 16px;
 }
+
 .sia-closing {
   display: flex;
   align-items: center;
@@ -1442,6 +1447,7 @@ img {
     align-items: flex-start;
   }
 }
+
 .site-footer-bottom {
   display: flex;
   flex-direction: column;
@@ -1465,6 +1471,7 @@ img {
 .site-footer-bottom a:hover {
   color: var(--white);
 }
+
 .scroll-top {
   position: fixed;
   right: 28px;
@@ -1510,6 +1517,7 @@ img {
     height: 46px;
   }
 }
+
 .logo img {
   height: 36px;
   width: auto;
@@ -1519,6 +1527,7 @@ img {
   height: 34px;
   width: auto;
 }
+
 /* Nasıl çalışır: simge kutusu */
 .sia-step-icon {
   display: grid;
@@ -1562,6 +1571,7 @@ img {
   background: var(--blue);
   color: var(--white);
 }
+
 /* =========================================================
    DEPARTMANLAR ARASI İLETİŞİM: DAİRE DİYAGRAMI
    ========================================================= */
@@ -1727,6 +1737,7 @@ img {
     font-size: 12px;
   }
 }
+
 .sia-step-icon {
   display: grid;
   place-items: center;
@@ -1749,6 +1760,7 @@ img {
 .sia-step:hover .sia-step-icon {
   transform: translateY(-4px);
 }
+
 .sia-measure {
   display: flex;
   flex-direction: column;
@@ -1763,6 +1775,7 @@ img {
 .sia-measure strong {
   margin-bottom: 0;
 }
+
 /* Üç çıktı kartı: harf yerine simge */
 .sia-output-icon {
   display: grid;
@@ -1784,6 +1797,7 @@ img {
 .sia-output-card:nth-child(3) .sia-output-icon {
   color: var(--blue);
 }
+
 /* =========================================================
    GÜVENLİK BÖLÜMÜ (katalog düzeni)
    ========================================================= */
@@ -1996,6 +2010,7 @@ img {
     align-items: flex-start;
   }
 }
+
 /* Örnek senaryo: katalog düzeni */
 .sx-scenario {
   padding: 34px;
@@ -2113,6 +2128,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 /* Senaryo kartı başlıkları: eski .sx-scenario strong kuralını geçersiz kılar */
 .sx-scenario-card strong {
   display: block;
@@ -2131,6 +2147,7 @@ img {
 .sx-scenario-card.is-dark strong {
   color: var(--white);
 }
+
 /* =========================================================
    NEDEN SİA: KOYU BÖLÜM VE İSTATİSTİKLER
    ========================================================= */
@@ -2230,6 +2247,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 /* =========================================================
    SIA HERO — ORTALANMIŞ PREMIUM KATALOG TASARIMI
    ========================================================= */
@@ -2279,12 +2297,10 @@ img {
   height: 850px;
   top: -390px;
   right: -170px;
-  background: radial-gradient(
-    circle closest-side,
-    transparent 58%,
-    rgba(37, 99, 235, 0.32) 59%,
-    rgba(37, 99, 235, 0.32) 100%
-  );
+  background: radial-gradient(circle closest-side,
+      transparent 58%,
+      rgba(37, 99, 235, 0.32) 59%,
+      rgba(37, 99, 235, 0.32) 100%);
 }
 
 .sia-arc-2 {
@@ -2301,11 +2317,9 @@ img {
   right: 9%;
   width: 150px;
   height: 110px;
-  background-image: radial-gradient(
-    circle,
-    rgba(147, 197, 253, 0.5) 2px,
-    transparent 3px
-  );
+  background-image: radial-gradient(circle,
+      rgba(147, 197, 253, 0.5) 2px,
+      transparent 3px);
   background-size: 25px 25px;
 }
 
@@ -2617,48 +2631,50 @@ img {
     transition: none;
   }
 }
+
 /* SIA bölümünü sayfanın ortasında tut */
 .sia-hero {
-    width: calc(100% - 40px);
-    max-width: 1240px;
-    margin: 40px auto;
-    border-radius: 24px;
-    box-sizing: border-box;
+  width: calc(100% - 40px);
+  max-width: 1240px;
+  margin: 40px auto;
+  border-radius: 24px;
+  box-sizing: border-box;
 }
 
 /* İçerikleri ortala */
 .sia-hero-inner {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 80px 32px 60px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 32px 60px;
+  box-sizing: border-box;
 }
 
 /* İçerideki örnek pencere */
 .sia-hero .sia-window-wrap {
-    max-width: 900px;
-    margin: 45px auto 0;
+  max-width: 900px;
+  margin: 45px auto 0;
 }
 
 /* Alt özellik kutuları */
 .sia-hero .sia-pills {
-    max-width: 900px;
-    margin: 35px auto 0;
+  max-width: 900px;
+  margin: 35px auto 0;
 }
 
 /* Mobil uyumluluk */
 @media (max-width: 600px) {
-    .sia-hero {
-        width: calc(100% - 20px);
-        margin: 10px auto;
-        border-radius: 16px;
-    }
+  .sia-hero {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    border-radius: 16px;
+  }
 
-    .sia-hero-inner {
-        padding: 55px 16px 35px;
-    }
+  .sia-hero-inner {
+    padding: 55px 16px 35px;
+  }
 }
+
 /* =========================================================
    NASIL ÇALIŞIR: KART DÜZENİ (katalog kapağı)
    ========================================================= */
@@ -2859,6 +2875,7 @@ img {
     display: none;
   }
 }
+
 /* =========================================================
    GÖRÜNÜM SİSTEMİ: TOKEN'LAR VE TUTARLILIK
    ========================================================= */
@@ -3060,6 +3077,7 @@ h3 {
   box-shadow: var(--shadow-md);
   z-index: 5;
 }
+
 /* Pencere üst noktaları: kırmızı, sarı, yeşil */
 .sia-window-top span:nth-child(1) {
   background: #ff5f57;
@@ -3072,6 +3090,7 @@ h3 {
 .sia-window-top span:nth-child(3) {
   background: #28c840;
 }
+
 /* Bölüm başı logosu */
 .section-logo {
   display: block;
@@ -3083,6 +3102,7 @@ h3 {
 .section-logo.is-dark {
   filter: brightness(0) invert(1);
 }
+
 /* Önce / sonra karşılaştırmasının ortasındaki ok */
 .sia-compare {
   position: relative;
@@ -3111,12 +3131,13 @@ h3 {
     transform: translate(-50%, -50%) rotate(90deg);
   }
 }
+
 /* Ürün bölümü: arka plandaki büyük bölüm numarası */
 .sia-product {
   position: relative;
 }
 
-.sia-product > *:not(.sia-big-num) {
+.sia-product>*:not(.sia-big-num) {
   position: relative;
   z-index: 1;
 }
@@ -3141,6 +3162,7 @@ h3 {
     top: 60px;
   }
 }
+
 /* Ürün bölümü: numara sağ üstte, başlık ona çarpmasın */
 .sia-product {
   position: relative;
@@ -3155,7 +3177,7 @@ h3 {
   max-width: 60%;
 }
 
-.sia-product > *:not(.sia-big-num) {
+.sia-product>*:not(.sia-big-num) {
   position: relative;
   z-index: 2;
 }
@@ -3175,6 +3197,7 @@ h3 {
 }
 
 @media (max-width: 900px) {
+
   .sia-product h2,
   .sia-product .sia-lead {
     max-width: 100%;
@@ -3186,18 +3209,21 @@ h3 {
     right: 4%;
   }
 }
+
 /* Ürün bölümü numarası: daha kalın, biraz daha belirgin */
 .sia-big-num {
   font-weight: 900;
   color: rgba(37, 99, 235, 0.09);
   letter-spacing: -0.04em;
 }
+
 .sia-subhead {
   margin: 56px 0 20px;
   font-family: var(--font-display);
   font-size: 45px;
   color: var(--navy);
 }
+
 /* Ürün ve diğer kartlara tutarlı gölge */
 .sia-compare,
 .sia-output-card,
@@ -3230,6 +3256,7 @@ h3 {
 .sx-benefit {
   box-shadow: 0 10px 24px rgba(11, 31, 58, 0.06);
 }
+
 /* Merkezden birimlere uzanan kesikli çizgiler */
 .sx-orbit-lines {
   position: absolute;
@@ -3506,6 +3533,7 @@ h3 {
 .sx-why .sx-kinds .sx-others p {
   color: var(--muted) !important;
 }
+
 /* Footer, koyu bloğun içinde: dış kutu stilleri sıfırlanır */
 .sx-why .site-footer {
   max-width: none;
@@ -3536,6 +3564,7 @@ h3 {
   padding-top: 22px;
   color: #cbd5e1;
 }
+
 /* =========================================================
    ANA SAYFA: TAM EKRAN (kenarlarda boşluk ve kolon yok)
    ========================================================= */
@@ -3556,10 +3585,10 @@ body,
   background: #ffffff;
 }
 
-.app > main,
-.app > footer,
-.app > .site-footer,
-.app > .sia-footer {
+.app>main,
+.app>footer,
+.app>.site-footer,
+.app>.sia-footer {
   width: 100%;
   max-width: none;
   margin: 0;
@@ -3567,8 +3596,8 @@ body,
 }
 
 /* Bölümler tam genişlik, yuvarlak köşe yok */
-.app > main > section,
-.app > main > div,
+.app>main>section,
+.app>main>div,
 .sia-hero,
 .sia-steps,
 .sia-security,
@@ -3610,9 +3639,9 @@ body,
   display: none;
 }
 
-.app > .site-footer,
-.app > .sia-footer,
-.app > footer,
+.app>.site-footer,
+.app>.sia-footer,
+.app>footer,
 .sx-why .site-footer {
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -3622,6 +3651,7 @@ body,
 }
 
 @media (max-width: 700px) {
+
   .sia-hero-inner,
   .sx-why-card,
   .sia-product,
@@ -3631,6 +3661,7 @@ body,
     padding-right: 5%;
   }
 }
+
 /* =========================================================
    TÜM BÖLÜMLER: TEK YATAY HİZA (aynı sol ve sağ kenar)
    ========================================================= */
@@ -3657,11 +3688,11 @@ body,
 }
 
 /* Bölüm içindeki doğrudan çocuklar da aynı kenarda, kendi genişliklerini sınırlamasın */
-.sia-product > *,
-.sia-security > *,
-.sx-section > *,
-.sx-why-card > *,
-.sia-hero-inner > * {
+.sia-product>*,
+.sia-security>*,
+.sx-section>*,
+.sx-why-card>*,
+.sia-hero-inner>* {
   max-width: none !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -3678,6 +3709,7 @@ body,
     --page-x: 5vw;
   }
 }
+
 /* =========================================================
    TÜM BÖLÜMLER: 1200px ORTAK KOLON, ARKA PLAN TAM EKRAN
    ========================================================= */
@@ -3705,11 +3737,11 @@ body,
 }
 
 /* İçerik kendi genişliğini sınırlamasın, kolon padding'i belirlesin */
-.sia-product > *,
-.sia-security > *,
-.sx-section > *,
-.sx-why-card > *,
-.sia-hero-inner > * {
+.sia-product>*,
+.sia-security>*,
+.sx-section>*,
+.sx-why-card>*,
+.sia-hero-inner>* {
   max-width: none !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -3733,6 +3765,7 @@ body,
     --page-x: 5vw;
   }
 }
+
 .sx-orbit-lines {
   position: absolute;
   inset: 0;
@@ -3740,11 +3773,13 @@ body,
   height: 100%;
   z-index: 0;
 }
+
 .sx-orbit-lines line {
   stroke: rgba(37, 99, 235, 0.35);
   stroke-width: 1.5;
   stroke-dasharray: 4 6;
 }
+
 .sx-why-card {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -3789,10 +3824,10 @@ body,
 }
 
 /* İçeriklerin hizasını koru */
-.sia-hero-inner > *,
-.sia-product > *,
-.sia-security > *,
-.sx-section > * {
+.sia-hero-inner>*,
+.sia-product>*,
+.sia-security>*,
+.sx-section>* {
   box-sizing: border-box;
 }
 
@@ -3815,6 +3850,7 @@ body,
     padding-bottom: 48px;
   }
 }
+
 /* =========================================================
    TEK YATAY HİZA: tüm bölümler + navbar aynı kolon
    ========================================================= */
@@ -3824,8 +3860,18 @@ body,
   --page-max: 1200px;
 }
 
-html, body, #root { width: 100%; margin: 0; padding: 0; }
-.app { width: 100%; background: #fff; }
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100%;
+  background: #fff;
+}
 
 /* Bölüm kabukları: tam genişlik, arka plan kenardan kenara */
 .sia-hero,
@@ -3844,11 +3890,15 @@ html, body, #root { width: 100%; margin: 0; padding: 0; }
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 0;               /* çift padding'i bitirir */
+  padding: 0;
+  /* çift padding'i bitirir */
   background: var(--navy);
 }
 
-.sx-why { padding-left: 0; padding-right: 0; }
+.sx-why {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 /* İçerik kolonu: yatay padding'i SADECE bunlar taşır */
 .sia-hero-inner,
@@ -3872,21 +3922,24 @@ html, body, #root { width: 100%; margin: 0; padding: 0; }
   padding-bottom: 80px;
   background: var(--navy);
 }
-.sia-steps-art { display: none; }
+
+.sia-steps-art {
+  display: none;
+}
 
 /* Çocuklar kendi genişliğini/ortalamasını bırakır */
-.sia-security > *,
-.sx-section > *,
-.sia-hero-inner > * {
+.sia-security>*,
+.sx-section>*,
+.sia-hero-inner>* {
   max-width: none;
   margin-left: 0;
   margin-right: 0;
 }
 
 /* Footer koyu bloğun içinde */
-.app > .site-footer,
-.app > .sia-footer,
-.app > footer {
+.app>.site-footer,
+.app>.sia-footer,
+.app>footer {
   width: 100%;
   max-width: none;
   margin: 0;
@@ -3901,8 +3954,11 @@ html, body, #root { width: 100%; margin: 0; padding: 0; }
 }
 
 @media (max-width: 600px) {
-  .navbar { width: calc(100% - 24px); }
+  .navbar {
+    width: calc(100% - 24px);
+  }
 }
+
 /* ===== TEK YATAY HİZA: nihai ===== */
 :root {
   --gutter: max(24px, calc((100% - 1200px) / 2));
@@ -3944,17 +4000,19 @@ html, body, #root { width: 100%; margin: 0; padding: 0; }
 }
 
 /* Çocuklar kendi max-width/ortalamasını bırakır */
-.sia-security.sia-security > *,
-.sia-product.sia-product > *,
-.sx-section.sx-section > * {
+.sia-security.sia-security>*,
+.sia-product.sia-product>*,
+.sx-section.sx-section>* {
   max-width: none;
   margin-left: 0;
   margin-right: 0;
 }
+
 .sia-steps {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
 .sx-others article {
   display: flex;
   flex-direction: column;
@@ -3968,6 +4026,7 @@ html, body, #root { width: 100%; margin: 0; padding: 0; }
   display: block;
   margin: 0;
 }
+
 /* Navbar: ikinci buton (Akreditasyon), Demo Talep Et'in yanında */
 .nav-button-ghost {
   display: inline-flex;
@@ -4038,11 +4097,12 @@ html, body, #root { width: 100%; margin: 0; padding: 0; }
 
 /* Küçük ekranlarda dil seçiciyi koru */
 @media (max-width: 768px) {
-  .navbar > .language-switcher {
+  .navbar>.language-switcher {
     margin-left: auto;
     margin-right: 10px;
   }
 }
+
 .language-switcher,
 .mobile-language-switcher {
   display: inline-flex;
@@ -4072,4 +4132,35 @@ html, body, #root { width: 100%; margin: 0; padding: 0; }
 .mobile-language-switcher button.active {
   background: #0057ff;
   color: #ffffff;
+}
+
+/* Yapay zekâ çıktı etiketleri: her türe kendi rengi */
+.sia-output span {
+  display: inline-block;
+  min-width: 96px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: #0b1f3a;
+}
+
+.sia-output.is-karar span,
+.sia-output.is-decision span {
+  background: #0b1f3a;
+}
+
+.sia-output.is-gorev span,
+.sia-output.is-task span,
+.sia-output.is-yapilacak span {
+  background: #0057ff;
+}
+
+.sia-output.is-aksiyon span,
+.sia-output.is-note span,
+.sia-output.is-not span {
+  background: #60a5fa;
 }
