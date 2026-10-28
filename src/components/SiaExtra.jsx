@@ -309,8 +309,8 @@ export function SiaCommunication({ language = "tr" }) {
                     <div
                         key={unit.pos}
                         className={`sx-unit sx-unit-${unit.pos} ${["right", "left", "top", "bottom"].includes(unit.pos)
-                                ? "is-dark"
-                                : ""
+                            ? "is-dark"
+                            : ""
                             }`}
                     >
                         <span />
